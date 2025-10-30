@@ -1,50 +1,58 @@
-# Welcome to your Expo app 👋
+# 🎙️ Voice Assistant App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A simple React Native (Expo) app that demonstrates **voice wake-up** and **voice-based input**.  
+The app listens for a wake phrase (“Hey Assistant”) and then records your next voice command, displaying it as text on the screen.
 
-## Get started
+---
 
-1. Install dependencies
+## Features
+- Wake word detection using simple speech recognition trigger.
+- Captures user voice command and converts it to text.
+- Displays the recognized text in real time.
+- Shows visual states (Idle → Listening → Result).
+- Works on Android emulator or real device via Expo Go.
 
-   ```bash
-   npm install
-   ```
+---
 
-2. Start the app
+## Setup Instructions
 
-   ```bash
-   npx expo start
-   ```
+## 1️ Prerequisites
+- Node.js (v18 or above)
+- npm (v9 or above)
+- Expo CLI (`npx expo`)
+- Android emulator or Expo Go app (for real device testing)
 
-In the output, you'll find options to open the app in a
+## 2️ Steps to Run
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+git clone https://github.com/DIPAL1209/voice-assistant.git
+cd voice-assistant
+npm install
+npx expo start
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 3️ Permissions
 
-## Get a fresh project
+When you open the app for the first time:
+-- Allow Microphone Access for speech recognition.
 
-When you're ready, run:
+## 4 How It Works
+The app starts in Idle mode.
+When you tap “Start Listening”, it enters Listening mode.
+It recognizes speech and displays the text result.
+On completion, you can tap again to restart listening.
 
-```bash
-npm run reset-project
-```
+## 5 Libraries Used
+Library	Purpose
+expo-speech	For speech features
+expo-av	Audio control and playback
+react-native-voice	Speech-to-text recognition
+expo-permissions	Requesting mic access
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 6 Notes
+This project uses React Native with Expo.
+Developed in JavaScript.
+Designed for clarity, not complexity.
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 7 Author
+Dipal Patel
+Date: October 30, 2025
+Email:dipalpatel1209@gmail.com
